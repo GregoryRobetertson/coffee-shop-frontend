@@ -1,12 +1,16 @@
 'use client';
-
+import Image from "next/image";
+import { useContext } from "react";
+import { CartContext } from "./ShoppingCart";
 export default function CoffeeCards({product}) {
+    const {addToCart} = useContext(CartContext)
     return (
         <div className="coffee-cards">
-            {product.image && <img src={procut.image} alt={product.name}/>}
+            {<Image src={product.imageUrl} alt={product.name} width={300} height={300}/>}
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p>{product.price}</p>
+            <button onClick={()=> addToCart(product)}>Add To Cart</button>
              </div>
     )
 }
