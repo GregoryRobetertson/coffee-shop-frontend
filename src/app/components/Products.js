@@ -18,7 +18,7 @@ export default function Product() {
     <>
     <div className="coffee-products">
     <h2>Our Coffee Products</h2>
-      {coffeeProducts.map((product) => (
+      {product.map((product) => (
         <CoffeeCards key={product.id} product={product} />
       ))}
     </div>

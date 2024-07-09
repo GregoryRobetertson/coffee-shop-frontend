@@ -1,4 +1,5 @@
 
+import { CartProvider } from "./components/ShoppingCart";
 import "./globals.css";
 
 
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <CartProvider>  
       <body>{children}</body>
+ </CartProvider>  
+      
     </html>
   );
 }
