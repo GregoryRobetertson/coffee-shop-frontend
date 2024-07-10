@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import Product from "./components/Products";
+import Header from "./components/Header";
 
 export default function Home() {
   useEffect(()=> {
@@ -16,7 +17,9 @@ wakeupServer();
   }, []) 
 
   return (
+   
     <main>
+       <Header/>
    <Product/>
     </main>
   );
