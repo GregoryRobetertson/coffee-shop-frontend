@@ -1,23 +1,25 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar } from 'react-bootstrap';
 export default function Header() {
+  
+
   return (
-   <header className='flex bg-gray-400 sm:px-10 min-h-[70px] tracking-wide relative z-50'>
-<div className="flex items-center justify-between w-full">
-        <Link href="/" passHref>
-          <div className="text-xl font-bold text-white hover:text-blue-100 cursor-pointer">
-            Sunrise Sips
-          </div>
-        </Link>
-        <nav>
-          <ul className='lg:flex flex-col lg:flex-row gap-x-5 items-center mt-3 text-white'>
-<li className="my-2 lg:my-0">
-<Link href="#products">Shop</Link>
-</li>
-          </ul>
-        </nav>
-        </div>
-   </header>
+    <div className="mt-0 p-2 bg-gray-400">
+    <Navbar expand="lg" className="container mx-auto">
+      <Navbar.Brand className="text-white text-2xl font-bold">
+       Sunrise Sip
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link href="#shop" className="text-white px-4 py-2">Shop</Nav.Link>
+          <Nav.Link href="#About" className="text-white px-4 py-2">About Us</Nav.Link>
+          <Nav.Link href="#Contact" className="text-white px-4 py-2">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  </div>
   )
 }
