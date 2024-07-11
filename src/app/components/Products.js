@@ -30,9 +30,9 @@ export default function Product() {
         
           }, []) 
    return (
- <div className='flex flex-col justify-center bg-gray-100'>
+ <div className='flex flex-col justify-center bg-gray-100 mt-0'>
       <div className='flex justify-between items-center px-20 py-5'>
-        <h1 className='text-2xl uppercase font-bold mt-10 text-center mb-10'>Shop</h1>
+        <h1 className='text-xl uppercase font-bold mt-10 text-center mb-10 bg-gray-800 rounded text-white px-4 py-2'>Shop</h1>
         {!showModal && <button className='px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
           onClick={toggle}
         >Cart ({cartItems.length})</button>}

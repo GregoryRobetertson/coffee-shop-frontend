@@ -4,9 +4,9 @@ import { useContext } from "react";
 import { CartContext } from "./ShoppingCart";
 export default function CoffeeCards({product}) {
     const {addToCart} = useContext(CartContext)
-    return (
+    return ( 
         
-        <div className="coffee-cards">
+        <div className="coffee-cards mt-0 bg-gray-300" id="shop">
             {<Image src={product.imageUrl} alt={product.name} width={300} height={300}/>}
            { console.log(product)}
             <h3>{product.name}</h3>
