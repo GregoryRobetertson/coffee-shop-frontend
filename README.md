@@ -1,5 +1,57 @@
 Sunrise Sips
 
+# Shopping Cart React Application
+
+## Functionality Implemented
+
+### Product Display
+- Utilizes the Product Component to fetch and display product data.
+- Each product is displayed as a card with details and an "Add to Cart" button.
+
+### Cart Management
+- Uses the CartContext to manage the cart state across the application.
+- Allows users to add items to the cart, remove items, and clear the entire cart.
+- Cart data is persisted to Local Storage to maintain state across page reloads.
+
+### Cart Total Calculation
+- Calculates and displays the total price of items in the cart.
+
+### Cart Modal
+- Renders a modal that displays cart items, quantities, and total price.
+- Provides options to remove items individually or clear the entire cart.
+
+### Hero Component
+- Displays a hero section with a heading and a call to action button.
+
+### Header Component
+- Renders a navigation bar with links to different sections of the application.
+
+### Footer Component
+- Displays contact information and copyright details at the bottom of the page.
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Context API**: Used to manage global state (cart state) across the application.
+- **Local Storage**: Used for persisting cart data locally in the browser.
+- **axios**: Library for making HTTP requests (partially implemented for API calls).
+- **Bootstrap**: Optional for styling components and layout.
+  
+## Potential Improvements
+
+- Implement error handling for API calls and state updates.
+- Add checkout functionality with payment integration (e.g., Stripe).
+- Allow product filtering and sorting by various attributes (price, category, etc.).
+- Create a dedicated product details page with more information and options.
+- Enhance cart functionality by adding quantity controls for each item.
+- Improve product image handling for better responsiveness and user experience.
+- Refine styling and user interface design for a more polished look.
+- Write unit and integration tests to ensure application reliability and stability.
+
+## Blockers 
+
+- Hero background image access was denied.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

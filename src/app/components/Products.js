@@ -30,7 +30,7 @@ export default function Product() {
         
           }, []) 
    return (
- <div className='flex flex-col justify-center bg-white mt-0' id="shop">
+ <div className='flex flex-col justify-center bg-white mt-5' id="shop">
       <div className='flex justify-between items-center px-5 py-5 bg-gray-300'>
         <h1 className='text-xl uppercase font-bold mt-10 text-center mb-10 bg-gray-800 rounded text-white px-4 py-2'>Shop</h1>
         {!showModal && <button className='px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
