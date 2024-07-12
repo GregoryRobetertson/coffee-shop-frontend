@@ -6,6 +6,7 @@ import { createContext, useState, useEffect } from 'react'
 export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
+  const [showModal, setShowModal] = useState(false)
   const [cartItems, setCartItems] = useState(localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [])
 
   const addToCart = (item) => {
@@ -62,6 +63,8 @@ export const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider
       value={{
+        showModal,
+        setShowModal,
         cartItems,
         addToCart,
         removeFromCart,

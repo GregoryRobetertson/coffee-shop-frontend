@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     position: relative; /* Ensure relative positioning for absolute positioning of pseudo-element */
-    background: url(https://lh3.googleusercontent.com/gg/AJIvXiuXkbbgIDSHTQze1J8s2I_mjNCPbZ_C4LMZ9_pbDTv71YwlIqs-hWDb1pg2HUSUPYBVVHnJYDDdnFrltIdePFpCiGYxfpUiBvyYpn6Uu6OrAwTJTel6RW3SUbVZxxTlryqeZfSt74teHhX6WVivE6AO638cYeMSoCi9iEBZvIE2Kt8eqxNyx3FCTxM4lNlu747OcbyuNPnVylzdYPS_FxhOF9erV0sTMyYQFMo18jD80bhDSMZ04AX5TyIe0SC2BA0dK5hRuMxffgMyrLbLdQ15Au7ZzWZmOl3jjAatqiSNA11ezR-NEw0-ITi3WFRfzozvibBmgwGHO74WohjvmF4)
+    background: url('/bg-image.jpeg')
       no-repeat;
     background-size: cover;
     background-position: center center;

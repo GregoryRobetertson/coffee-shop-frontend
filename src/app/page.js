@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import Product from "./components/Products";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function Home() {
   useEffect(()=> {
@@ -19,10 +21,12 @@ wakeupServer();
 
   return (
    
-    <main>
+    <main className="relative">
        <Header/>
        <Hero/>
    <Product/>
+   <About/>
+   <Footer/>
     </main>
   );
 }
