@@ -6,7 +6,7 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
-  const [cartItems, setCartItems] = useState(windows.localstorage.getItem('cartItems') ? JSON.parse(windows.localstorage.getItem('cartItems')) : []);
+  const [cartItems, setCartItems] = useState(window.localStorage.getItem('cartItems') ? JSON.parse(window.localStorage.getItem('cartItems')) : []);
 
   const addToCart = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem._id === item._id);
@@ -49,11 +49,11 @@ export const CartProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    windows.localstorage.setItem("cartItems", JSON.stringify(cartItems));
+    window.localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
   useEffect(() => {
-    const storedCartItems = windows.localstorage.getItem("cartItems");
+    const storedCartItems = window.localStorage.getItem("cartItems");
     if (storedCartItems) {
       setCartItems(JSON.parse(storedCartItems));
     }
