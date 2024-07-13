@@ -25,7 +25,7 @@ export default function Cart ({showModal, toggle}) {
             {cartItems.map((item) => (
               <div key={item.id} className="flex justify-between items-center bg-gray-100 dark:bg-gray-700 p-4 rounded shadow-sm">
                 <div className="flex flex-col">
-                  <img src={item.imageUrl} alt={item.title} className="w-20 h-20 object-cover rounded-md" />
+                  <Image src={item.imageUrl} alt={item.title} className="w-20 h-20 object-cover rounded-md" />
                   <h2 className="text-lg font-semibold">{item.name}</h2>
                   <p className="text-gray-600 dark:text-gray-400">{item.price}</p>
                 </div>
